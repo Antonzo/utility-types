@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JSONObject testType<JSONObject>({
+      simpleKey: 'stringValue',
+      numberKey: 123,
+      booleanKey: true,
+      nullKey: null,
+      objectKey: { nestedKey: 'nestedValue' },
+      arrayKey: ['stringInArray', 456, false, { arrayObjectKey: 'value' }],
+    }) (type) should match snapshot 1`] = `"JSONObject"`;
+
+exports[`JSONValue testType<JSONValue>('stringValue') (type) should match snapshot 1`] = `"JSONValue"`;
+
+exports[`JSONValue testType<JSONValue>([
+      'arrayElement1',
+      101112,
+      null,
+      { keyInArray: 'objectValue' },
+    ]) (type) should match snapshot 1`] = `"JSONValue"`;
+
+exports[`JSONValue testType<JSONValue>({
+      key: 'value',
+      nestedObject: { nestedKey: 789 },
+    }) (type) should match snapshot 1`] = `"JSONValue"`;
+
+exports[`JSONValue testType<JSONValue>(123) (type) should match snapshot 1`] = `"JSONValue"`;
+
+exports[`JSONValue testType<JSONValue>(null) (type) should match snapshot 1`] = `"JSONValue"`;
+
+exports[`JSONValue testType<JSONValue>(true) (type) should match snapshot 1`] = `"JSONValue"`;
