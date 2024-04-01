@@ -1,5 +1,252 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`GeoJSONFeature with AreaProperties testType<GeoJSONFeature<AreaProperties>>({
+      type: 'Feature',
+      geometry: {
+        type: 'Polygon',
+        coordinates: [
+          [
+            [125.0, 10.0],
+            [125.0, 11.0],
+            [126.0, 11.0],
+            [126.0, 10.0],
+            [125.0, 10.0],
+          ],
+        ],
+      },
+      properties: {
+        name: 'Central Park',
+        area: 3416,
+        protected: true,
+      },
+    }) (type) should match snapshot 1`] = `"GeoJSONFeature<AreaProperties>"`;
+
+exports[`GeoJSONFeature with PointProperties testType<GeoJSONFeature<PointProperties>>({
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [125.6, 10.1],
+      },
+      properties: {
+        name: 'Dinagat Islands',
+        elevation: 357,
+      },
+    }) (type) should match snapshot 1`] = `"GeoJSONFeature<PointProperties>"`;
+
+exports[`GeoJSONFeatureCollection with PointProperties testType<GeoJSONFeatureCollection<PointProperties>>({
+      type: 'FeatureCollection',
+      features: [
+        {
+          type: 'Feature',
+          geometry: {
+            type: 'Point',
+            coordinates: [102.0, 0.5],
+          },
+          properties: {
+            name: 'Null Island',
+          },
+        },
+        {
+          type: 'Feature',
+          geometry: {
+            type: 'Point',
+            coordinates: [103.0, 1.5],
+          },
+          properties: {
+            name: 'One-and-a-half Island',
+            elevation: 15,
+          },
+        },
+      ],
+    }) (type) should match snapshot 1`] = `"GeoJSONFeatureCollection<PointProperties>"`;
+
+exports[`GeoJSONGeometry - LineString testType<GeoJSONGeometry>({
+      type: 'LineString',
+      coordinates: [
+        [100.0, 0.0],
+        [101.0, 1.0],
+      ],
+    }) (type) should match snapshot 1`] = `"GeoJSONGeometry"`;
+
+exports[`GeoJSONGeometry - MultiLineString testType<GeoJSONGeometry>({
+      type: 'MultiLineString',
+      coordinates: [
+        [
+          [100.0, 0.0],
+          [101.0, 1.0],
+        ],
+        [
+          [102.0, 2.0],
+          [103.0, 3.0],
+        ],
+      ],
+    }) (type) should match snapshot 1`] = `"GeoJSONGeometry"`;
+
+exports[`GeoJSONGeometry - MultiPoint testType<GeoJSONGeometry>({
+      type: 'MultiPoint',
+      coordinates: [
+        [100.0, 0.0],
+        [101.0, 1.0],
+      ],
+    }) (type) should match snapshot 1`] = `"GeoJSONGeometry"`;
+
+exports[`GeoJSONGeometry - MultiPolygon testType<GeoJSONGeometry>({
+      type: 'MultiPolygon',
+      coordinates: [
+        [
+          [
+            [102.0, 2.0],
+            [103.0, 2.0],
+            [103.0, 3.0],
+            [102.0, 3.0],
+            [102.0, 2.0],
+          ],
+        ],
+        [
+          [
+            [100.0, 0.0],
+            [101.0, 0.0],
+            [101.0, 1.0],
+            [100.0, 1.0],
+            [100.0, 0.0],
+          ],
+          [
+            [100.2, 0.2],
+            [100.8, 0.2],
+            [100.8, 0.8],
+            [100.2, 0.8],
+            [100.2, 0.2],
+          ],
+        ],
+      ],
+    }) (type) should match snapshot 1`] = `"GeoJSONGeometry"`;
+
+exports[`GeoJSONGeometry - Point testType<GeoJSONGeometry>({
+      type: 'Point',
+      coordinates: [100.0, 0.0],
+    }) (type) should match snapshot 1`] = `"GeoJSONGeometry"`;
+
+exports[`GeoJSONGeometry - Polygon testType<GeoJSONGeometry>({
+      type: 'Polygon',
+      coordinates: [
+        [
+          [100.0, 0.0],
+          [101.0, 0.0],
+          [101.0, 1.0],
+          [100.0, 1.0],
+          [100.0, 0.0],
+        ],
+      ],
+    }) (type) should match snapshot 1`] = `"GeoJSONGeometry"`;
+
+exports[`GeoJSONLineString testType<GeoJSONLineString>({
+      type: 'LineString',
+      coordinates: [
+        [100.0, 0.0],
+        [101.0, 1.0],
+      ],
+    }) (type) should match snapshot 1`] = `"GeoJSONLineString"`;
+
+exports[`GeoJSONMultiLineString testType<GeoJSONMultiLineString>({
+      type: 'MultiLineString',
+      coordinates: [
+        [
+          [100.0, 0.0],
+          [101.0, 1.0],
+        ],
+        [
+          [102.0, 2.0],
+          [103.0, 3.0],
+        ],
+      ],
+    }) (type) should match snapshot 1`] = `"GeoJSONMultiLineString"`;
+
+exports[`GeoJSONMultiPoint testType<GeoJSONMultiPoint>({
+      type: 'MultiPoint',
+      coordinates: [
+        [100.0, 0.0],
+        [101.0, 1.0],
+      ],
+    }) (type) should match snapshot 1`] = `"GeoJSONMultiPoint"`;
+
+exports[`GeoJSONMultiPolygon testType<GeoJSONMultiPolygon>({
+      type: 'MultiPolygon',
+      coordinates: [
+        [
+          [
+            [102.0, 2.0],
+            [103.0, 2.0],
+            [103.0, 3.0],
+            [102.0, 3.0],
+            [102.0, 2.0],
+          ],
+        ],
+        [
+          [
+            [100.0, 0.0],
+            [101.0, 0.0],
+            [101.0, 1.0],
+            [100.0, 1.0],
+            [100.0, 0.0],
+          ],
+          [
+            [100.2, 0.2],
+            [100.8, 0.2],
+            [100.8, 0.8],
+            [100.2, 0.8],
+            [100.2, 0.2],
+          ],
+        ],
+      ],
+    }) (type) should match snapshot 1`] = `"GeoJSONMultiPolygon"`;
+
+exports[`GeoJSONPoint testType<GeoJSONPoint>({
+      type: 'Point',
+      coordinates: [100.0, 0.0],
+    }) (type) should match snapshot 1`] = `"GeoJSONPoint"`;
+
+exports[`GeoJSONPolygon testType<GeoJSONPolygon>({
+      type: 'Polygon',
+      coordinates: [
+        [
+          [100.0, 0.0],
+          [101.0, 0.0],
+          [101.0, 1.0],
+          [100.0, 1.0],
+          [100.0, 0.0],
+        ],
+      ],
+    }) (type) should match snapshot 1`] = `"GeoJSONPolygon"`;
+
+exports[`HTTPRequestBody - simple data testType<HTTPRequestBody>({
+      data: complexJSONData,
+    }) (type) should match snapshot 1`] = `"HTTPRequestBody"`;
+
+exports[`HTTPRequestBody - simple data testType<HTTPRequestBody>({
+      data: simpleJSONData,
+    }) (type) should match snapshot 1`] = `"HTTPRequestBody"`;
+
+exports[`HTTPResponse - complex JSON response testType<HTTPResponse<JSONObject>>({
+      status: 200,
+      statusText: 'OK',
+      headers: { 'Content-Type': 'application/json' },
+      body: complexJSONData,
+    }) (type) should match snapshot 1`] = `"HTTPResponse<JSONObject>"`;
+
+exports[`HTTPResponse - simple JSON response testType<HTTPResponse<JSONObject>>({
+      status: 200,
+      statusText: 'OK',
+      headers: { 'Content-Type': 'application/json' },
+      body: simpleJSONData,
+    }) (type) should match snapshot 1`] = `"HTTPResponse<JSONObject>"`;
+
+exports[`HTTPResponse - typed response testType<HTTPResponse<UserResponse>>({
+      status: 200,
+      statusText: 'OK',
+      headers: { 'Content-Type': 'application/json' },
+      body: userResponseBody,
+    }) (type) should match snapshot 1`] = `"HTTPResponse<UserResponse>"`;
+
 exports[`JSONObject testType<JSONObject>({
       simpleKey: 'stringValue',
       numberKey: 123,
@@ -8,6 +255,31 @@ exports[`JSONObject testType<JSONObject>({
       objectKey: { nestedKey: 'nestedValue' },
       arrayKey: ['stringInArray', 456, false, { arrayObjectKey: 'value' }],
     }) (type) should match snapshot 1`] = `"JSONObject"`;
+
+exports[`JSONPatch testType<JSONPatch>([
+      { op: 'add', path: '/a/b/c', value: { someKey: 'someValue' } },
+      { op: 'remove', path: '/x/y/z' },
+      { op: 'replace', path: '/g/h/i', value: null },
+      { op: 'move', from: '/j/k/l', path: '/m/n/o' },
+      { op: 'copy', from: '/p/q/r', path: '/s/t/u' },
+      { op: 'test', path: '/v/w/x', value: [1, 2, 3] },
+    ]) (type) should match snapshot 1`] = `"JSONPatch"`;
+
+exports[`JSONPatchOperation testType<JSONPatchOperation>({
+      op: 'add',
+      path: '/a/b/c',
+      value: 'stringValue',
+    }) (type) should match snapshot 1`] = `"JSONPatchOperation"`;
+
+exports[`JSONPatchOperation testType<JSONPatchOperation>({ op: 'copy', from: '/a/b/c', path: '/d/e/f' }) (type) should match snapshot 1`] = `"JSONPatchOperation"`;
+
+exports[`JSONPatchOperation testType<JSONPatchOperation>({ op: 'move', from: '/a/b/c', path: '/d/e/f' }) (type) should match snapshot 1`] = `"JSONPatchOperation"`;
+
+exports[`JSONPatchOperation testType<JSONPatchOperation>({ op: 'remove', path: '/a/b/c' }) (type) should match snapshot 1`] = `"JSONPatchOperation"`;
+
+exports[`JSONPatchOperation testType<JSONPatchOperation>({ op: 'replace', path: '/a/b/c', value: 123 }) (type) should match snapshot 1`] = `"JSONPatchOperation"`;
+
+exports[`JSONPatchOperation testType<JSONPatchOperation>({ op: 'test', path: '/a/b/c', value: true }) (type) should match snapshot 1`] = `"JSONPatchOperation"`;
 
 exports[`JSONValue testType<JSONValue>('stringValue') (type) should match snapshot 1`] = `"JSONValue"`;
 
@@ -28,3 +300,11 @@ exports[`JSONValue testType<JSONValue>(123) (type) should match snapshot 1`] = `
 exports[`JSONValue testType<JSONValue>(null) (type) should match snapshot 1`] = `"JSONValue"`;
 
 exports[`JSONValue testType<JSONValue>(true) (type) should match snapshot 1`] = `"JSONValue"`;
+
+exports[`NullableJSONValue testType<NullableJSONValue>('stringValue') (type) should match snapshot 1`] = `"string | number | boolean | JSONObject | JSONValue[] | null | undefined"`;
+
+exports[`NullableJSONValue testType<NullableJSONValue>(123) (type) should match snapshot 1`] = `"string | number | boolean | JSONObject | JSONValue[] | null | undefined"`;
+
+exports[`NullableJSONValue testType<NullableJSONValue>(null) (type) should match snapshot 1`] = `"string | number | boolean | JSONObject | JSONValue[] | null | undefined"`;
+
+exports[`NullableJSONValue testType<NullableJSONValue>(undefined) (type) should match snapshot 1`] = `"string | number | boolean | JSONObject | JSONValue[] | null | undefined"`;
